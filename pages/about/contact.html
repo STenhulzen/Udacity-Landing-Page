@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — BrightPath Marketing</title>
-  <meta name="description" content="Learn about BrightPath Marketing and how we help teams execute campaigns with clarity and clean systems." />
+  <title>Contact — BrightPath Marketing</title>
+  <meta name="description" content="Contact BrightPath Marketing to improve campaign execution, automation, and reporting." />
 
   <link rel="stylesheet" href="../../css/global.css" />
   <link rel="stylesheet" href="../../css/about.css" />
@@ -23,9 +23,9 @@
       <nav class="site-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a class="nav-link" href="../../index.html">Home</a></li>
-          <li><a class="nav-link" href="index.html" aria-current="page">About</a></li>
+          <li><a class="nav-link" href="index.html">About</a></li>
           <li><a class="nav-link" href="../../index.html#features">Features</a></li>
-          <li><a class="nav-link" href="../../index.html#contact">Contact</a></li>
+          <li><a class="nav-link" href="#" aria-current="page">Contact</a></li>
         </ul>
       </nav>
 
@@ -36,65 +36,81 @@
   </header>
 
   <main id="main">
-    <section class="page-hero" aria-labelledby="about-title">
-      <div class="container page-hero-grid">
-        <div>
-          <h1 id="about-title">Built for execution</h1>
-          <p class="lead">
-            We help teams launch faster by focusing on structure, automation, and clean reporting.
-            No fluff—just a system you can run every week.
+
+    <!-- CONTACT SECTION -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container">
+
+        <h1 id="contact-title">Contact Us</h1>
+        <p>
+          Share a bit about your business and we’ll follow up with next steps.
+        </p>
+
+        <!-- ✅ SINGLE, VALID FORM -->
+        <form class="form" action="#" method="post" aria-label="Contact form">
+
+          <div class="form-row">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
+
+          <div class="form-row">
+            <label for="goal">Primary goal</label>
+            <select id="goal" name="goal" required>
+              <option value="">Select one</option>
+              <option value="more-leads">Get more leads</option>
+              <option value="better-conversion">Improve conversion rate</option>
+              <option value="automation">Automate follow-up</option>
+              <option value="reporting">Improve reporting</option>
+            </select>
+          </div>
+
+          <fieldset class="form-row">
+            <legend>Preferred contact method</legend>
+            <div class="radio-row">
+              <input id="prefEmail" name="pref" type="radio" value="email" checked />
+              <label for="prefEmail">Email</label>
+            </div>
+            <div class="radio-row">
+              <input id="prefPhone" name="pref" type="radio" value="phone" />
+              <label for="prefPhone">Phone</label>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="details">Anything we should know?</label>
+            <textarea
+              id="details"
+              name="details"
+              rows="4"
+              placeholder="Example: We run Google Ads and want better lead follow-up."
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="button" type="submit">Send request</button>
+            <button class="button button-secondary" type="reset">Reset</button>
+          </div>
+
+          <p class="form-disclaimer">
+            By submitting, you agree we can contact you about this request. No spam.
           </p>
 
-          <ul class="checklist" aria-label="What we value">
-            <li>Clarity over complexity</li>
-            <li>Consistency over hacks</li>
-            <li>Documentation and repeatable processes</li>
-          </ul>
-        </div>
+        </form>
 
-        <figure class="about-media">
-          <img src="../../images/team.jpg" alt="Two teammates reviewing campaign results together." />
-          <figcaption>Collaboration + clarity beats guesswork.</figcaption>
-        </figure>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="principles-title">
-      <div class="container">
-        <h2 id="principles-title">Principles</h2>
-
-        <div class="principles-grid" role="list">
-          <article class="card" role="listitem">
-            <h3>Make it readable</h3>
-            <p>Clear headings, simple layouts, and accessible forms improve real-world conversion.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <h3>Make it measurable</h3>
-            <p>We keep reporting lightweight so it actually gets used.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <h3>Make it repeatable</h3>
-            <p>Systems and templates reduce wasted effort and keep teams aligned.</p>
-          </article>
-        </div>
-
-        <section class="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title">FAQ</h2>
-
-          <details>
-            <summary>Do you only work with one platform?</summary>
-            <p>No. We’ll start with what you have and make it cleaner. Tools matter less than the workflow.</p>
-          </details>
-
-          <details>
-            <summary>What do you need from me to start?</summary>
-            <p>Access to your website analytics, ad accounts (if applicable), and any CRM you currently use.</p>
-          </details>
-        </section>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
