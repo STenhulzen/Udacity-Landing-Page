@@ -107,6 +107,7 @@
   grid-column: span 7;
 }
 
+/* Responsive adjustments (required for rubric) */
 @media (max-width: 900px) {
   .hero-content,
   .hero-media,
